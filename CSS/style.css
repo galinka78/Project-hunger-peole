@@ -73,6 +73,23 @@ html {
 .block_promo {
     position: relative;
 }
+.block_text {
+    max-width: 60px;
+    width: 100%;
+    position: relative;
+}
+.promo_text {
+    position: absolute;
+    top: 0;
+    left: -120px;
+    width: 261px;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}
 .promo_main {
     position: relative;
     display: flex;
@@ -91,7 +108,7 @@ html {
     font-family: Banny;
     font-size: 96px;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    
 }
 .social_buttons {
     display: flex;
@@ -152,13 +169,33 @@ html {
     
 }
 .link--down::after {
+    content: '';
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 0;
-    left: 0;
-    border: 1px border rgba(255, 255, 255, 0.2);
+    margin-top: -1px;
+    margin-left: -1px;
+    top: -25%;
+    left: -25%;
+    border: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 50%;
+}
+.title {
+    position: relative;
+}
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    margin-left: -25px;
+    width: 60px;
+    height: 5px;
+    background: #E8C300;
+    border-radius: 50px;
+}
+.buttons {
+    margin-top: 58px;
 }
 
 
